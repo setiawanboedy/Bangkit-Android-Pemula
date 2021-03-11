@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="@string/transition"
+    android:background="#3F3E40"
+    tools:context=".views.About">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/about"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8sp"
+                android:text="@string/budi_setiawan"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gonisetiawan0_gmail_com"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16sp"
+                android:paddingTop="24sp"
+                android:paddingEnd="16dp"
+                android:text="@string/resume_name"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="8sp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16sp"
+                android:text="@string/resume"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sosmed"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/watch"
+                android:text="@string/sosial_media"
+                android:textAllCaps="false"
+                android:visibility="visible"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/visClose"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/close"
+                android:textAllCaps="false"
+                android:src="@drawable/ic_action_close"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/visSosmed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnfb"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:drawableTop="@drawable/ic_action_fb"
+                    android:text="@string/setiawan_boedy"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#213BCC"
+                   />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLinkedin"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:drawableTop="@drawable/ic_action_linkedin"
+                    android:text="@string/budi_setiawan"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#17318E"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnWhatsapp"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="@string/_081946358408"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#03832E"
+                    android:drawableTop="@drawable/ic_action_wa"
+                    android:layout_marginStart="10dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

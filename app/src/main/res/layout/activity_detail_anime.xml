@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F3E40"
+    tools:context=".views.DetailAnime">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="470dp">
+
+            <FrameLayout
+                android:transitionName="@string/transition"
+                android:layout_width="match_parent"
+                android:layout_height="440dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imgDetailBg"
+                    android:contentDescription="@string/background_image" />
+
+                <ImageView
+                    android:id="@+id/imgDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:contentDescription="@string/image_poster"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/titleDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:text="@string/tittle"/>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnShare"
+                    android:layout_marginEnd="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="#10DCAC"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ic_action_share"
+                    android:contentDescription="@string/button_share"
+                    />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/white"
+            android:text="@string/release_date"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/releaseDetail"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/white"
+            android:text="@string/date_release"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:text="@string/sinop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sinopsisDetail"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:text="@string/sinopsis"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/watch"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:drawableStart="@drawable/ic_action_play"
+            android:textColor="@color/white"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:text="@string/watch_now"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/button_watch" />
+    </LinearLayout>
+</ScrollView>

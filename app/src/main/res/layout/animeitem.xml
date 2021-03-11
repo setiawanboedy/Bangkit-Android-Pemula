@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:transitionName="@string/transition"
+        android:id="@+id/transition">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="77dp"
+                android:id="@+id/imgPoster"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
+                tools:src="@android:color/darker_gray"
+                android:contentDescription="@string/image_poster" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleName"
+                    android:layout_marginBottom="16sp"
+                    android:text="@string/title"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/sinopsis"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/release"
+                    android:text="@string/release_date"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AnimeApp</string>
+    <string name="button_share">Button share</string>
+    <string name="background_image">Background image</string>
+    <string name="date_release">Date Release</string>
+    <string name="tittle">Tittle</string>
+    <string name="sinop">Sinopsis:</string>
+    <string name="release_date">Release Date:</string>
+    <string name="about">About</string>
+    <string name="gonisetiawan0_gmail_com">gonisetiawan0@gmail.com</string>
+    <string name="budi_setiawan">Budi Setiawan</string>
+    <string name="transition">transition</string>
+    <string name="resume">My name is Budi Setiawan. I am a final year Physics student at Mataram University especially major in theoretical and computational physics, even i learn about physics but not close to learn other knowledge like android developer. I have developed excellent numerical skill through my degree and i have strong basics programing too. I supplement this skill through my competency in Internet of Things. My critical thinking and determination is highlighted by my achievement of became leader in faculty club. I am now looking to further develop and use my skills in industry placement, specially in android and IoT.</string>
+    <string name="resume_name">Resume:</string>
+    <string name="watch_now">Watch Now</string>
+    <string name="button_watch">Button watch</string>
+    <string name="sosial_media">Sosial Media</string>
+    <string name="setiawan_boedy">Setiawan Boedy</string>
+    <string name="_081946358408">081946358409</string>
+    <string name="image_poster">Image Poster</string>
+    <string name="sinopsis">Sinopsis</string>
+    <string name="title">Title</string>
+
+</resources>
